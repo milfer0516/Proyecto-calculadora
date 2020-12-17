@@ -1,0 +1,45 @@
+.contenedor {
+   max-width: 1000px;
+   margin: 0 auto;
+}
+body {
+   margin: 0;
+   padding: 0;
+   background: linear-gradient(to right, #00aaff, #00ff6c);
+}
+.calculadora-grilla {
+   display: grid;
+   justify-content: center;
+   align-content: center;
+   min-height: 100vh;
+   grid-template-columns: repeat(4, 125px);
+   grid-template-rows: minmax(140, auto) repeat(6, 280px);
+}
+.calculadora-grilla > button {
+   cursor: pointer;
+   font-size: 3rem;
+   font-weight: 10px;
+   border: 1px solid #fff;
+   outline: none;
+   background-color: rgba(255, 255, 255, 0.75);
+}
+.output {
+   grid-column: 1 / -1;
+   background-color: rgba(0, 0, 0, 0.75);
+   display: flex;
+   align-items: flex-end;
+   justify-content: space-around;
+   flex-direction: column;
+   padding: 40px;
+   word-wrap: break-word;
+   word-break: break-all;
+}
+
+.output .display {
+   color: black;
+   font-size: 2rem;
+   text-align: right;
+}
+#btn-igual {
+   font-size: 3rem;
+}
