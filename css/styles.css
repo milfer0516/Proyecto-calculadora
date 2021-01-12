@@ -7,39 +7,46 @@ body {
    padding: 0;
    background: linear-gradient(to right, #00aaff, #00ff6c);
 }
-.calculadora-grilla {
+/* Estilos a todos los botones  */
+.calculadora {
+   margin: inherit;
+   margin-top: 120px;
    display: grid;
-   justify-content: center;
    align-content: center;
-   min-height: 100vh;
-   grid-template-columns: repeat(4, 125px);
-   grid-template-rows: minmax(140, auto) repeat(6, 280px);
+   padding: 10px;
+   background-color: #e9eaec;
+   width: 400px;
+   height: 700px;
+   border-radius: 25px;
 }
-.calculadora-grilla > button {
+.calculadora td button {
+   display: block;
    cursor: pointer;
-   font-size: 3rem;
-   font-weight: 10px;
-   border: 1px solid #fff;
-   outline: none;
-   background-color: rgba(255, 255, 255, 0.75);
+   border: 2px solid black;
+   background-color: #007965;
+   color: ivory;
+   border-radius: 5px;
+   width: 90px;
+   height: 70px;
+   font-size: 25px;
 }
-.output {
-   grid-column: 1 / -1;
-   background-color: rgba(0, 0, 0, 0.75);
-   display: flex;
-   align-items: flex-end;
-   justify-content: space-around;
-   flex-direction: column;
-   padding: 40px;
-   word-wrap: break-word;
-   word-break: break-all;
+.calculadora td button:hover {
+   background-color: rgb(101, 101, 184);
+}
+.igual td button {
+   display: grid;
+   grid-column: 4;
+   grid-row: 6 / 8;
 }
 
-.output .display {
-   color: black;
-   font-size: 2rem;
-   text-align: right;
-}
-#btn-igual {
-   font-size: 3rem;
+#resultado {
+   display: block;
+   text-align: center;
+   font-size: 40px;
+   margin-bottom: 40px;
+   width: 400px;
+   height: 100px;
+   line-height: 100px;
+   background-color: rgb(152, 154, 170);
+   border-radius: 15px;
 }
