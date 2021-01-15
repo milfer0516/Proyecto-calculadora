@@ -1,52 +1,66 @@
-.contenedor {
-   max-width: 1000px;
-   margin: 0 auto;
-}
+/* Globales */
 body {
-   margin: 0;
-   padding: 0;
-   background: linear-gradient(to right, #00aaff, #00ff6c);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(to right, #00aaff, #00ff6c);
 }
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 80px;
+  color: #ef4f4f;
+}
+.contenedor {
+  width: 90%;
+  max-width: 56em;
+  margin: 0 auto;
+  height: 70%;
+}
+
 /* Estilos a todos los botones  */
+
 .calculadora {
-   margin: inherit;
-   margin-top: 120px;
-   display: grid;
-   align-content: center;
-   padding: 10px;
-   background-color: #e9eaec;
-   width: 400px;
-   height: 700px;
-   border-radius: 25px;
+  margin: inherit;
+  /* margin-top: 60px; */
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #e9eaec;
+  width: 25em;
+  height: 44em;
+  border-radius: 25px;
 }
 .calculadora td button {
-   display: block;
-   cursor: pointer;
-   border: 2px solid black;
-   background-color: #007965;
-   color: ivory;
-   border-radius: 5px;
-   width: 90px;
-   height: 70px;
-   font-size: 25px;
+  display: block;
+  cursor: pointer;
+  border: 2px solid black;
+  background-color: #007965;
+  color: ivory;
+  border-radius: 5px;
+  width: 90px;
+  height: 70px;
+  font-size: 25px;
 }
 .calculadora td button:hover {
-   background-color: rgb(11, 10, 75);
+  background-color: rgb(11, 10, 75);
 }
 .igual td button {
-   display: grid;
-   grid-column: 4;
-   grid-row: 6 / 8;
+  display: grid;
+  grid-column: 4;
+  grid-row: 6 / 8;
 }
 
 #resultado {
-   display: block;
-   text-align: center;
-   font-size: 40px;
-   margin-bottom: 40px;
-   width: 400px;
-   height: 100px;
-   line-height: 100px;
-   background-color: rgb(152, 154, 170);
-   border-radius: 15px;
+  display: block;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 40px;
+  width: 400px;
+  height: 100px;
+  line-height: 100px;
+  background-color: rgb(152, 154, 170);
+  border-radius: 15px;
 }
+/* Media Querie */
