@@ -1,8 +1,10 @@
 /* Globales */
-body {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+body {
   background: linear-gradient(to right, #00aaff, #00ff6c);
 }
 h1 {
